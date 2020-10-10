@@ -1,0 +1,281 @@
+header{
+    //background-color: $col-per4;
+    padding: 10px 40px;
+    height: 154px;
+    display: flex;
+    border-bottom: 1px solid $col-ext1;
+
+    .hLogo{
+        flex:0 0 124px;
+        max-width: 124px;
+
+        img{
+            width: 124px;
+        }
+    }
+
+    .hContent{
+        flex:0 0 calc(100% - 124px);
+        max-width: calc(100% - 124px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .hcButdes{
+            padding: 0 15px;
+
+            button{
+                background-color: $col-per1;
+                border:0;
+                color:$col-per4;
+                border-radius: 90px;
+                height: 40px;
+                padding: 0 20px;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                transition: all 0.2s ease;
+
+                span{
+                    margin-right: 5px;
+                }
+
+                img{
+                    width: 26px;
+                    vertical-align: sub;
+                    margin-left: 6px;
+                }
+
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+
+        .hcSearch{
+            padding: 0 15px;
+        }
+
+        .hcMenu{
+            height: 40px;
+            padding-left: 15px;
+
+            button{
+                
+                width: 40px;
+                height: 40px;
+                border:0;
+                background-color: transparent;
+                background-image: url('/img/icons/hamburgerbutton\(black\).svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+                //background-color: red;
+            }
+        }
+    }
+
+    
+    &.bTransparent{
+        background-color: rgba(255,255,255,0.3);
+        border-bottom-color: transparent;
+
+        .hContent{
+            .hcMenu{
+                button{
+                    background-image: url('/img/icons/hamburgerbutton.svg'); 
+                }
+            }
+        }
+    }
+
+    &.fixTop{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        
+    }
+}
+
+//Input de busqueda
+.searchCustom{
+    position: relative;
+
+    &::after{
+        content: '';
+        //background-color: red;
+        background-image: url('/img/icons/iconobusqueda.svg');
+        width: 30px;
+        height: 30px;
+        position:absolute;
+        top:5px;
+        right: 12px;
+    }
+
+    input{
+        background-color: $col-per4;
+        border:1px solid $col-per2;
+        border-radius: 90px;
+        height: 40px;
+        max-width: 215px;
+        padding: 6px 45px 6px 15px;
+        box-sizing: border-box;
+    }
+
+    &.scTransparent{
+
+        &::after{
+            background-image: url('/img/icons/iconobusqueda\(blanco\).svg');
+        }
+
+        input{
+            background-color: transparent;
+            color:$col-per4;
+            border-color: $col-per4;
+        }
+    }
+}
+
+
+//MEnu aside
+.menuAside{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 100%;
+    //right: 0;
+    width: 100%;
+    bottom: 0;
+    transition: all 0.3s ease;
+    z-index: 333;
+
+    .maContent{
+        background-color: $col-per1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom:0;
+        width: 500px;
+        padding: 102px 4rem 1rem 1rem;
+
+        .mcSeaBut{
+            display: flex;
+            justify-content: flex-end;
+
+            .hcSearch{
+                flex:0 0 215px;
+                max-width: 215px;
+            }
+
+            .mcCloBut{
+                flex:0 0 40px;
+                max-width: 40px;
+                margin-left: 20px;
+
+                button{
+                    width: 40px;
+                    height: 40px;
+                    background-color: transparent;
+                    border: 0;
+                    background-image: url('/img/icons/icon_close.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 26px;
+                }
+            }
+        }
+
+        .mcLisMen{
+            margin:3rem 0 0 3rem;
+
+            ul{
+                li{
+                    margin:0.6rem 0;
+
+                    a{
+                        color:$col-per4;
+                        text-transform: uppercase;
+                        font-family: $dinProB;
+                        font-size: 2rem;
+
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    &.maShow{
+        left: 0;
+    }
+}
+
+//Footer
+footer{
+    background-color: $col-per3;
+    padding:40px;
+
+    .fSerCop{
+        color:$col-per4;
+        padding-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+
+        p{
+            margin:0;
+        }
+
+        .fsdSer,
+        .fsdCop{
+            flex:0 0 50%;
+            max-width: 50%;
+        }
+
+        .fsdSer{
+
+            & > p{
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                font-family: $dinProM;
+                opacity: 0.4;
+            }
+
+            & div{
+                padding:1rem 0 0;
+
+                .fsdsNum{
+                    font-size: 1.5rem;
+                    font-family: $dinProM;
+
+                    img{
+                        vertical-align: sub;
+                        margin-right: 0.4rem;
+                    }
+                }
+            }
+        }
+
+        .fsdCop{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+    }
+
+    .fSoc{
+        padding-top: 20px;
+        border-top: 1px solid $col-per4;
+
+        a{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            margin-right:20px ;
+        }
+    }
+}

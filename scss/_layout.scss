@@ -1,0 +1,581 @@
+.wrapGen{
+    //background-color: red;
+    width: 100%;
+    padding: 0 113px;
+    position: relative;
+
+    &.dBorder{
+
+        & > div.row{
+            border-top: 1px solid #DEDEDE;
+            border-left: 1px solid #DEDEDE;
+            padding-top: 9rem;
+        }
+    }
+
+    &.sIndex{
+        margin-bottom: 4rem;
+        margin-top: -3rem;
+    }
+
+    &.wgPad{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.backIndex{
+    //height: 335px;
+    height: 650px;
+    background-image: url('/img/slide01.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
+    & > div{
+        color:$col-per4;
+        width: 730px;
+        margin: 0 0 11rem 93px;
+
+        & > p{
+            font-family: $dinProB;
+            text-transform: uppercase;
+            font-size: 3.8rem;
+            margin: 0;
+        }
+
+        & > div{
+            font-family: $dinProM;
+            font-size: 1.4rem;
+            padding-left: 2.5rem;
+            position: relative;
+            
+            &::after{
+                //background-color: red;
+                content:'';
+                width: 28px;
+                height: 28px;
+                position: absolute;
+                top:0;
+                left: -3px;
+                background-image: url('/img/icons/flechaamarilla.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto;
+            }
+
+            p{
+                margin: 0;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+//Medidor index
+.boxMed{
+    background-color: $col-per1;
+    height: 146px;
+    position: absolute;
+    top:-3rem;
+    right: 0;
+    left: 35%;
+    z-index: 1;
+    padding: 1rem 4rem;
+    display: flex;
+
+    & > div{
+        flex:0 0 25%;
+        max-width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin:0;
+            color:$col-per4;
+            line-height: 1.2rem;
+        }
+
+        & > p:first-child{
+            font-family: $dinProB;
+            font-size: 3.4rem;
+            line-height: 3.4rem;
+            min-width: 120px;
+        }
+
+        & > div{
+            min-width: 120px;
+        }
+    }
+}
+
+//Titulo el charrito index
+.titleCharro{
+    text-transform: uppercase;
+    margin-top: 2rem;
+
+    span{
+        
+    }
+
+    p{
+        color:$col-per5;
+        font-family: $dinProB;
+        font-size: 2.4rem;
+        line-height: 2.2rem;
+    }
+}
+
+//Menu vertical
+.menuVertical{
+    background-color: $col-per4;
+
+    li{
+        padding: 1rem 1.4rem;
+        border-bottom: 1px solid $col-ext1;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        p{
+            font-family: $dinProM;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            margin: 0;
+        }
+
+        span{
+            font-size: 1.2rem;
+        }
+
+        &.active,
+        &:hover{
+            background-color: $col-per1;
+            color:$col-ext3;
+        }
+    }
+
+    & > li:last-child{
+        border-bottom:0;
+    }
+
+
+    &.mvBleft{
+        border-left: 4px solid $col-per1;
+    }
+
+    &.mvBright{
+        border-right: 4px solid $col-per1;
+    }
+}
+
+//Caja descripcion
+.boxDesc{
+    padding: 0 0 0 2.4rem;
+    position: relative;
+
+    &::after{
+        content:'';
+        width: 28px;
+        height: 28px;
+        //background-color: red;
+        position: absolute;
+        top:0;
+        left: -5px;
+        background-image: url('/img/icons/flechaamarilla.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+}
+
+//Caja aplicaciones
+.boxApli{
+    margin-bottom: 1rem;
+
+    .baImage{
+        height: 15rem;
+        background-color: $col-per4;
+    }
+
+    .baTitle{
+        background-color: $col-per1;
+        color:$col-ext3;
+        padding: 2px 2px 2px 2.4rem;
+
+        p{
+            margin:0;
+            font-family: $dinProM;
+            font-size: 1.2rem;
+        }
+    }
+
+    .baLista{
+        background-color: $col-per4;
+        padding: 1rem 2.3rem;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+
+            li{
+                width: 50%;
+                padding: 2px 0 2px 15px;
+                position: relative;
+
+                &::after{
+                    content:'';
+                    width: 5px;
+                    height: 5px;
+                    background-color: $col-per1;
+                    position: absolute;
+                    top:11px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+//Caja ver especificaciones
+.boxVer{
+    border:1px solid $col-per2;
+    border-radius: 6px;
+    padding:0.5rem 2.3rem;
+
+    .bvhead{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            margin:0;
+            font-family: $dinProM;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        button{
+            border:0;
+            background-color: transparent;
+        }
+    }
+
+    .bvbody{
+        display: none;
+    }
+}
+
+
+//Caja servicios
+.boxServicios{
+    background-color: $col-per4;
+    margin-bottom: 3rem;
+
+    .bsImagen{
+        height: 18rem;
+        background-color: #999999;
+    }
+
+    .bsDescri{
+        padding: 1rem;
+
+        p{
+            margin: 0;
+        }
+
+        .bsdTitle{
+            font-family: $dinProM;
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        & > p:last-child{
+            height: 80px;
+            overflow: hidden;
+        }
+    }
+
+    .bsButton{
+        padding: 0.4rem 1rem 1.4rem;
+
+        a{
+            color:$col-per1;
+            text-transform: uppercase;
+            font-family: $dinProM;
+            font-size: 1.2rem;
+            display: block;
+            position: relative;
+            padding-left: 35px;
+
+            &::after{
+                content:'';
+                width: 28px;
+                height: 28px;
+                position: absolute;
+                top:0;
+                left: 0;
+                background-image: url('/img/icons/flechaamarilla.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto;
+            }
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+//Estilo de parrafo con flecha amarilla
+.boxParr{
+    position: relative;
+    padding-left: 35px;
+
+    &::after{
+        content:'';
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-image: url('/img/icons/flechaamarilla.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+}
+
+//Caja imagen generica
+.boxImgba{
+    background-color: #999999;
+    height: 28rem;
+    border-bottom: 0.8rem solid $col-per1;
+
+    &.biStyle2{
+        border-bottom: 0;
+        height: 24rem;
+    }
+}
+
+//Caja de Frase
+.boxFrase{
+    padding-top: 3rem;
+    position: relative;
+
+    p{
+        font-family: $dinProB;
+        font-size: 2.1rem;
+        line-height: 2.4rem;
+        position: relative;
+        z-index: 1;
+
+        span{
+            display: block;
+        }
+    }
+
+    &::before{
+        //background-color: red;
+        content:'';
+        width: 64px;
+        height: 44px;
+        position: absolute;
+        top:27px;
+        left:-4px;
+        background-image: url('/img/icons/comillasamarillas.svg');
+    }
+}
+
+
+//Titulo en Quienes somos
+.boxTitleCenter{
+    margin-bottom: 1.6rem;
+
+    p{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    & > p:first-child{
+        font-family: $dinProM;
+        font-size: 1.8rem;
+        font-weight: 1.4rem;
+    }
+
+    & > p:last-child{
+        font-family: $dinProB;
+        color:$col-per5;
+        font-size: 4rem;
+        line-height: 3.4rem;
+    }
+}
+
+//Seccion amarilla de Quienes somos
+.boxQuien{
+    color:$col-per4;
+
+    & > p:first-child{
+        font-family: $dinProB;
+        font-size: 2rem;
+    }
+}
+
+
+//CAja como de slider
+.boxSlide{
+    color:$col-per4;
+    margin-bottom: 3rem;
+    padding-bottom: 0.1rem;
+    position: relative;
+
+    & > p:first-child{
+        font-family: $dinProM;
+        font-size: 1.4rem;
+    }
+
+    .bsBorder{
+        position: absolute;
+        width: 16rem;
+        border-bottom:1px solid $col-per4;
+        bottom:0;
+        left: 0;
+
+        &::after{
+            content:'';
+            width: 6rem;
+            border-bottom: 4px solid $col-per4;
+            position: absolute;
+            bottom:-3px;
+        }
+    }
+
+
+
+    .btnSliLeft,
+    .btnSliRight{
+        background-color: transparent;
+        border:0;
+        padding: 0;
+        position: absolute;
+        bottom:-48px;
+        left: 0;
+    }
+
+    .btnSliRight{
+        left:40px;
+    }
+}
+
+.boxYell{
+    background-color: $col-per1;
+    color:$col-per4;
+    padding: 0.5rem 1.8rem;
+    border-radius: 6px;
+    margin:4rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        font-family: $dinProM;
+        font-size: 1.4rem;
+        margin:0;
+        text-transform: uppercase;
+    }
+
+    button{
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+
+
+//Caja de las sucursales y el mapa
+.boxSucMap{
+    //background-color: red;
+    height: 36rem;
+    display: flex;
+    
+    .bsmLista{
+        flex:0 0 30%;
+        max-width: 30%;
+        overflow-y: auto;
+        padding-right: 1rem;
+        padding-left: 2px;
+
+        .textSuc,
+        .textEst{
+            font-family: $dinProB;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            line-height: 2.4rem;
+        }
+
+        .textEst{
+            color:$col-per1;
+            margin-bottom: 1.8rem;
+        }
+
+        .boxSucursal{
+            padding: 1.4rem;
+            border:1px solid $col-ext1;
+            margin-bottom: 1.8rem;
+            position: relative;
+            
+            p{
+                margin-bottom: 0;
+                font-size: 0.9rem;
+            }
+
+            & > div{
+                background-color: $col-ext3;
+                display: block;
+                padding: 0.2rem 0.4rem 0.2rem 1.4rem;
+                position:absolute;
+                top: -14px;
+                left: -1px;
+
+                &::after{
+                    content:'';
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    top:-1px;
+                    left: -8px;
+                    background-image: url('/img/icons/flechaamarilla.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+
+                p{
+                    font-family: $dinProB;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    
+                }
+            }
+        }
+
+
+    }
+
+    .bsmMapa{
+        flex:0 0 70%;
+        max-width: 70%;
+        background-image: url('/img/mapa.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+

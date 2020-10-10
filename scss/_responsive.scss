@@ -1,0 +1,299 @@
+@media (min-width: 320px) and (max-width: 768px){
+
+//Navbar
+header{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 75px;
+
+    .hLogo{
+        flex:0 0 50px;
+        max-width: 50px;
+
+        img{
+            width: 50px;
+        }
+    }
+
+    .hContent{
+        flex:0 0 calc(100% - 50px);
+        max-width: calc(100% - 50px);
+        align-items: center;
+
+        .hcButdes{
+            display: none;
+
+            button{
+                span{
+                    display: none;
+                }
+            }
+        }
+
+        .hcSearch{
+            display: none;
+        }
+    }
+}
+
+//Menu aside
+.menuAside{
+    .maContent{
+        width: 80%;
+        padding-top: 20px;
+        padding-right: 1rem;
+
+        .mcSeaBut{
+
+            .hcSearch{
+                flex: 0 0 180px;
+                max-width: 180px;
+
+                .searchCustom{
+                    input{
+                        max-width: 100%; 
+                    }
+                }
+            }
+
+        }
+
+        .mcLisMen{
+            margin:2rem 0 0 1rem;
+
+            ul{
+                li{
+                    margin:1.2rem 0;
+
+                    a{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Footer
+footer{
+    padding: 30px 15px;
+
+    .fSerCop{
+        
+        .fsdSer,
+        .fsdCop{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .fsdSer{
+            text-align: center;
+        }
+
+        .fsdCop{
+            align-items: normal;
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+    }
+
+    .fSoc{
+        display: flex;
+        justify-content: center;
+
+        a{
+            margin: 0 15px;
+        }
+    }
+}
+
+//wrap general
+.wrapGen{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+//HOME
+.backIndex{
+    align-items: center;
+    margin-top: -1rem;
+
+    & > div{
+        margin:0 20px;
+
+        & > p{
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        & > div{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.boxMed{
+    left:0;
+    padding: 0.5rem;
+    height: 120px;
+
+    & > div{
+        justify-content: normal;
+        
+        & > p:first-child{
+            font-size: 2.2rem;
+            min-width: auto;
+        }
+
+        & > div{
+            min-width: auto;
+            text-align: center;
+
+            p{
+                //display: inline;
+                font-size: 0.9rem;
+                line-height: 1rem;
+            }
+        }
+    }
+}
+.wrapGen.dBorder>div.row{
+    padding-top: 5rem;
+}
+
+.imgRespon{
+    width: 100%;
+}
+//Fin
+
+
+//Nuestros Productos
+.textTitle{
+    line-height: 2.2rem;
+}
+
+.boxDesc{
+    padding-left: 1.8rem;
+}
+.boxApli{
+    .baTitle{
+        padding-left: 1.8rem;
+    }
+    .baLista{
+        padding: 1rem 1.8rem;
+
+        ul{
+            li{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+.boxVer{
+    padding: 0.5rem 1.8rem;
+}
+//Fin
+
+//Servicios 1
+.boxTitle{
+    padding-bottom: 1rem;
+}
+.boxServicios{
+    .bsDescri{
+        .bsdTitle{
+            line-height: 1.8rem;
+        }
+
+        & > p:last-child{
+            height: 76px;
+        }
+    }
+}
+//Fin
+
+//Servicios 2
+.boxParr{
+    padding-left: 1.8rem;
+}
+.boxImgba{
+    height: 16rem;
+}
+
+.order-first{
+    margin-bottom: 1rem;
+
+    .boxTitle{
+        border-right: 0;
+        border-left: 1px solid #DEDEDE;
+        margin-bottom: 3rem;
+
+        .textTitle{
+            text-align: left;
+        }
+    }
+}
+//Fin
+
+//Quienes somos
+.boxTitleCenter{
+
+    & > p:last-child{
+        font-size: 3rem;
+    }
+}
+.boxFrase{
+    padding-top: 1rem;
+
+    p{
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+
+        span{
+            display: inline;
+        }
+    }
+
+    &::before{
+        top: -10px;
+    }
+}
+.boxImgba.biStyle2{
+    height: 12rem;
+    margin-top: 1rem;
+}
+
+.wrapGen.wgPad.backYell{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.boxQuien{
+    margin-top:2rem;
+}
+//Fin
+
+//Sucursales
+.boxSucMap{
+    flex-wrap: wrap;
+    height: auto;
+
+    .bsmLista,
+    .bsmMapa{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+
+    .bsmLista{
+        height: 22rem;
+    }
+
+    .bsmMapa{
+        height: 24rem;
+        margin-top: 2rem;
+    }
+}
+//Fin
+
+}
