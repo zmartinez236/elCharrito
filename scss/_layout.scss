@@ -579,3 +579,85 @@
     }
 }
 
+//Nuevo index
+.backIndexMod{
+    height: 650px;
+    position: relative;
+
+    .bimVideo{
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
+        
+        &::after{
+            content:'';
+            position: absolute;
+            top:0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        video{
+            //height: 100%;
+            max-width: fit-content;
+        }
+    }
+
+    .textIndexMod{
+        margin-top: 13rem;
+        color:$col-ext3;
+
+        & > div{
+            width: 42rem;
+            margin: 0 auto;
+
+            & > p{
+                font-family: "DIN Pro Bold";
+                text-transform: uppercase;
+                font-size: 3.8rem;
+                margin: 0;
+            }
+    
+            & > div{
+                font-family: $dinProM;
+                font-size: 1.4rem;
+                padding-left: 2.5rem;
+                position: relative;
+                
+                &::after{
+                    //background-color: red;
+                    content:'';
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    top:0;
+                    left: -3px;
+                    background-image: url('/img/icons/flechaamarilla.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+    
+                p{
+                    margin: 0;
+                    line-height: 30px;
+                }
+            }
+
+        }
+
+        
+    }
+
+    .logoIndexMod{
+        text-align: center;
+        margin-top: 13rem;
+    }
+}
